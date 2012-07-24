@@ -26,7 +26,7 @@ gcc ../src/test.c -o ../bin/test -lsqlite3
 
 #run cases
 echo start running testcases
-printf "%10s%15s%10s%10s%10s\r\n" "Case" "Action" "Return" "Result" "Duration"
+printf "%10s%15s%10s%10s%13s\r\n" "Case" "Action" "Return" "Result" "Duration(s)"
 caseMajors=$(ls ../cases)
 for caseMajor in $caseMajors
 do

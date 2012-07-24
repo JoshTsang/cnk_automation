@@ -278,7 +278,7 @@ int main(int argc, char **argv)
     
     tCost = difftimeval(&tEnd, &tStart);
     //printf("%10s%15s%10s%10s%10s\r\n", "Case", "Action", "Return", "Result", "Duration");
-    printf("%10s%15s%10d%10s%10f s\r\n", argv[1], argv[2], ret, ret==200?"Succ":"Failed", tCost);
+    printf("%10s%15s%10d%10s%13f\r\n", argv[1], argv[2], ret, ret==200?"Succ":"Failed", tCost);
     close(sockfd);
     
     return 0;
